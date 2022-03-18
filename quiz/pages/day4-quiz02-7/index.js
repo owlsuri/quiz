@@ -50,7 +50,8 @@ export default function GraphqlMutationProduct() {
     }
 
     const onChangePrice = (event) => {
-    setPrice(Number(event.target.value))
+      setPrice(parseInt(event.target.value));
+      //event.target.valueAsNumber 라는 방법도 있음
     }
 
 
